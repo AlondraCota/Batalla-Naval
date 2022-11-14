@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="naval.css" type="text/css" />
+        <title>Juego</title>
+    </head>
+    <body>
+        <h3>Batalla Naval</h3>
+        <!-- <p align="left"><img src="img/barco2.jpg " width="100px" height="100px"></p> -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="board">
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="boardAttack">
+                    </div>
+                </div>
+            </div>
+            <h4>Naves disponibles:</h4>
+            <br><br>
+            <p align="center"><img src="img/barco2.jpg " width="100px" height="100px"></p>
+            <div id="ships" class="row">
+                <div class="col"> 
+                    <div>
+                        <span>Acorazado</span></br>
+                        <span>Tamaño: 3</span>
+                    </div>
+                    <div class="position"></div>
+                </div>
+                <div class="col"> 
+                    <div>
+                        <span>Destructor</span></br>
+                        <span>Tamaño: 2</span>
+                    </div>
+                    <div class="position"></div>
+                </div> 
+                <div class="col"> 
+                    <div>
+                        <span>Submarino</span></br>
+                        <span>Tamaño: 1</span>
+                    </div>
+                    <div class="position"></div>
+                </div>          
+            </div>
+            <div class="row">
+                <button id="button" onclick="startJuego()">Empezar juego</button>
+            </div>
+        </div>
+        <script src="batalla.js"></script>
+    </body>
+</html>
